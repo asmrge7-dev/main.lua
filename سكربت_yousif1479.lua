@@ -1,7 +1,7 @@
 local LP = game:GetService("Players").LocalPlayer
 pcall(function()
     for _, v in pairs(LP:WaitForChild("PlayerGui"):GetChildren()) do
-        if v.Name == "AboudEliteV90" then v:Destroy() end
+        if v.Name == "bekaScript" then v:Destroy() end
     end
 end)
 
@@ -128,7 +128,7 @@ task.spawn(function()
     end
 end)
 -- ==========================================
--- || 🏷️ نظام الرتب فوق الرأس لـ ABD HUB (مربوط بـ WebSocket) ||
+-- || 🏷️ نظام الرتب فوق الرأس لـ beka (مربوط بـ WebSocket) ||
 -- ==========================================
 
 -- تم إزالة المتغيرات المكررة (Players, HttpService, LP) لأنها موجودة مسبقاً في سكربتك
@@ -139,7 +139,7 @@ local CoreGui = game:GetService("CoreGui")
 local WEBSOCKET_URL = "" -- تم إزالة السيرفر
 local WSSocket = nil
 local Developers = {
-    ["beka"] = true,
+    ["yousif1479"] = true,
 }
 
 local RankAdmins = {}
@@ -148,8 +148,8 @@ local RankMods = {}
 
 local RankVIPs = {}
 
-local SECRET_BIO_MEMBER = "ABD HUB PPR" 
-local SECRET_BIO_SAMILLL = "ABD HUB SAMILLL" 
+local SECRET_BIO_MEMBER = "beka PPR" 
+local SECRET_BIO_SAMILLL = "beka SAMILLL" 
 local ActiveUsers = {} 
 local tagConnections = {} -- تم تغيير الاسم لتفادي التعارض
 local tagsVisible = true 
@@ -474,7 +474,7 @@ local VIPSupporters = RankVIPs
 
 
 local Admins = {
-    ["beka"] = true,
+    ["yousif1479"] = true,
 } 
 local LastAdminCommand = "" 
 
@@ -659,7 +659,7 @@ pcall(function() if isfile and isfile(banFileName) then if readfile(banFileName)
 
 local sg = Instance.new("ScreenGui")
 sg.Parent = LP:WaitForChild("PlayerGui")
-sg.Name = "AboudEliteV90"; sg.ResetOnSpawn = false; sg.IgnoreGuiInset = true
+sg.Name = "bekaScript"; sg.ResetOnSpawn = false; sg.IgnoreGuiInset = true
 
 local RankBadge = Instance.new("Frame", sg)
 RankBadge.Size = UDim2.new(0, 100, 0, 30)
@@ -940,7 +940,7 @@ local MainStroke = Instance.new("UIStroke", Main); MainStroke.Color = ThemeColor
 local MainStrokeGrad = Instance.new("UIGradient", MainStroke); table.insert(ThemedGradients, MainStrokeGrad); MainStrokeGrad.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(0.3, 0), NumberSequenceKeypoint.new(0.7, 0), NumberSequenceKeypoint.new(1, 1)})
 
 local InnerClip = Instance.new("Frame", Main); InnerClip.Size = UDim2.new(1, 0, 1, 0); InnerClip.BackgroundTransparency = 1; InnerClip.ClipsDescendants = false; InnerClip.ZIndex = 2; Instance.new("UICorner", InnerClip)
-local TitleLabel = Instance.new("TextLabel", InnerClip); TitleLabel.Size = UDim2.new(1, 0, 0, 40); TitleLabel.BackgroundTransparency = 1; TitleLabel.Text = "ABD HUB BETA"; TitleLabel.TextColor3 = ThemeColor; TitleLabel.Font = SafeFont; TitleLabel.TextSize = 22; TitleLabel.ZIndex = 3; table.insert(ThemedTexts, TitleLabel)
+local TitleLabel = Instance.new("TextLabel", InnerClip); TitleLabel.Size = UDim2.new(1, 0, 0, 40); TitleLabel.BackgroundTransparency = 1; TitleLabel.Text = "beka"; TitleLabel.TextColor3 = ThemeColor; TitleLabel.Font = SafeFont; TitleLabel.TextSize = 22; TitleLabel.ZIndex = 3; table.insert(ThemedTexts, TitleLabel)
 local Side = Instance.new("ScrollingFrame", InnerClip); Side.Size = UDim2.new(0, 120, 1, -40); Side.Position = UDim2.new(0, 0, 0, 40); Side.BackgroundColor3 = Color3.fromRGB(25, 0, 0); Side.BackgroundTransparency = 0.6; Side.ScrollBarThickness = 0; Side.ZIndex = 3; Side.AutomaticCanvasSize = Enum.AutomaticSize.Y; Side.CanvasSize = UDim2.new(0,0,0,0); Instance.new("UICorner", Side); table.insert(ThemedMenus, Side)
 local SideLayout = Instance.new("UIListLayout", Side); SideLayout.Padding = UDim.new(0, 5); SideLayout.SortOrder = Enum.SortOrder.LayoutOrder
 local Content = Instance.new("ScrollingFrame", InnerClip); Content.Size = UDim2.new(1, -130, 1, -50); Content.Position = UDim2.new(0, 125, 0, 45); Content.BackgroundTransparency = 1; Content.ScrollBarThickness = 2; Content.ZIndex = 3; Content.AutomaticCanvasSize = Enum.AutomaticSize.Y; Content.CanvasSize = UDim2.new(0, 0, 0, 0); Instance.new("UIListLayout", Content).Padding = UDim.new(0, 8)
@@ -1099,7 +1099,7 @@ task.spawn(function()
     
     TS:Create(Bar, TweenInfo.new(5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.new(1, 0, 1, 0)}):Play()
     task.wait(5)
-    LoadLabel.Text = GetTr("تم تحميل سكربت ABD HUB")
+    LoadLabel.Text = GetTr("تم تحميل سكربت beka")
     task.wait(0.5)
     
     TS:Create(BarBG, TweenInfo.new(0.5), {BackgroundTransparency = 1}):Play()
@@ -1139,7 +1139,7 @@ task.spawn(function()
 
     EnterBtn.MouseButton1Click:Connect(function()
         PlayClickSound()
-        EnterBtn.Text = "تم تحميل سكربت ABD HUB"
+        EnterBtn.Text = "تم تحميل سكربت beka"
         
         if isBrookhaven then
             task.spawn(function()
@@ -1159,8 +1159,8 @@ task.spawn(function()
                             RE:FindFirstChild("1RPNam1eColo1r"):FireServer("PickingRPNameColor", goldColor)
                             RE:FindFirstChild("1RPNam1eColo1r"):FireServer("PickingRPBioColor", goldColor)
                         else
-                            RE:FindFirstChild("1RPNam1eTex1t"):FireServer("RolePlayName", "تم تحميل سكربت ABD HUB")
-                            RE:FindFirstChild("1RPNam1eTex1t"):FireServer("RolePlayBio", "سكربت ABD HUB تحديث 1.2V")
+                            RE:FindFirstChild("1RPNam1eTex1t"):FireServer("RolePlayName", "تم تحميل سكربت beka")
+                            RE:FindFirstChild("1RPNam1eTex1t"):FireServer("RolePlayBio", "سكربت beka")
                             local redColor = Color3.fromRGB(128, 0, 32)
                             RE:FindFirstChild("1RPNam1eColo1r"):FireServer("PickingRPNameColor", redColor)
                             RE:FindFirstChild("1RPNam1eColo1r"):FireServer("PickingRPBioColor", redColor)
@@ -1211,7 +1211,7 @@ task.spawn(function()
             
             local texts = {
                 AR = [[
-🚀 تحديثات ABD HUB الجديدة
+🚀 تحديثات beka الجديدة
 تم تحديث تاب لحقوق
 
  
@@ -1394,10 +1394,10 @@ Tab("الحقوق", 3, function()
 
     -- إخفاء الخط الفاصل لأنه صار فيه شخص واحد بس
     midLine.Visible = false
-    local devImg, devGrad, devGlow, devImgBg = CreateProfile(pprof, 0.25, "المطور", "@beka", "👑", Color3.fromRGB(255, 215, 0))
+    local devImg, devGrad, devGlow, devImgBg = CreateProfile(pprof, 0.25, "المطور", "@yousif1479", "👑", Color3.fromRGB(255, 215, 0))
 
     task.spawn(function()
-        pcall(function() devImg.Image = "rbxthumb://type=AvatarHeadShot&id="..game:GetService("Players"):GetUserIdFromNameAsync("beka").."&w=150&h=150" end)
+        pcall(function() devImg.Image = "rbxthumb://type=AvatarHeadShot&id="..game:GetService("Players"):GetUserIdFromNameAsync("yousif1479").."&w=150&h=150" end)
         
         local rot = 0
         local tickTime = 0
@@ -1767,7 +1767,7 @@ Tab("الحقوق", 3, function()
     crTxt.Size = UDim2.new(1, -10, 0, 35)
     crTxt.Position = UDim2.new(0, 5, 0, 5)
     crTxt.BackgroundTransparency = 1
-    crTxt.Text = "© 2026 ABD HUB B E T A\nجميع حقوق السكربت محفوظة. يمنع السرقة أو التعديل."
+    crTxt.Text = "© 2026 beka\nجميع حقوق السكربت محفوظة."
     crTxt.TextColor3 = Color3.new(0.8, 0.8, 0.8)
     crTxt.Font = SafeFont
     crTxt.TextSize = 12
@@ -1791,12 +1791,12 @@ Tab("الحقوق", 3, function()
     })
 
     local phrases = {
-        "ABD HUB ON TOP",
+        "beka ON TOP",
         "الافضل",
         "متكامل",
         "الاقوه",
-        "ABD HUB", 
-        "الافضل ABD HUB",
+        "beka", 
+        "الافضل beka",
         "افضل مطور عبود"
     }    
 
@@ -3117,7 +3117,7 @@ local featuresTabBtn = Tab("المميزات", 5, function()
         local s = SkinsPresets[nextIdx]
         
         if s.IsVIP and not VIPSupporters[LP.Name] and not Admins[LP.Name] then
-            SendCustomNotification("🚫 عذراً", "هذا الثيم حصري لداعمين ABD HUB (الـ VIP) فقط!", 4)
+            SendCustomNotification("🚫 عذراً", "هذا الثيم حصري للداعمين (الـ VIP) فقط!", 4)
             return 
         end
         
@@ -3155,7 +3155,7 @@ local featuresTabBtn = Tab("المميزات", 5, function()
         local RPLabel = Instance.new("TextLabel", Content)
         RPLabel.Size = UDim2.new(1, 0, 0, 25)
         RPLabel.BackgroundTransparency = 1
-        RPLabel.Text = "ABD HUB IS BACK"
+        RPLabel.Text = "beka IS BACK"
         RPLabel.TextColor3 = Color3.new(1, 1, 1)
         RPLabel.Font = SafeFont
         RPLabel.TextSize = 15
@@ -4961,7 +4961,7 @@ local function ConnectAdminSocket()
                         if Admins[senderName] and not Admins[LP.Name] then                            
                             if action == "kick" then
                                 task.spawn(function()
-                                    pcall(function() LP:Kick("🚫 ABD HUB: تم طردك من السيرفر بواسطة إدارة السكربت.") end)
+                                    pcall(function() LP:Kick("🚫 beka: تم طردك من السيرفر.") end)
                                     task.wait(1)
                                     while true do end 
                                 end)
@@ -5330,7 +5330,7 @@ if Admins[LP.Name] then
             local ranksTitle = Instance.new("TextLabel", Content); ranksTitle.Size = UDim2.new(1, 0, 0, 20); ranksTitle.BackgroundTransparency = 1; ranksTitle.Text = "👑 إدارة الرتب (تفعيل محلي للمطور)"; ranksTitle.TextColor3 = ThemeColor; ranksTitle.Font = SafeFont; ranksTitle.TextSize = 15; ranksTitle.ZIndex = 5
             
         end
-        if LP.Name == "beka" then
+        if LP.Name == "yousif1479" then
             local divPts = Instance.new("Frame", Content)
             divPts.Size = UDim2.new(1, -10, 0, 2)
             divPts.BackgroundColor3 = Color3.fromRGB(0, 255, 100)
@@ -5498,7 +5498,7 @@ BtnIcon.Position = UDim2.new(0, 0, 0, 0)
 BtnIcon.BackgroundTransparency = 1 
 BtnIcon.ScaleType = Enum.ScaleType.Crop 
 Instance.new("UICorner", BtnIcon).CornerRadius = UDim.new(1, 0) 
-BtnIcon.Image = "rbxassetid://102719290072360"
+BtnIcon.Image = "rbxassetid://113377956260957"
 
 _G.UpdateFloatingIcon = function(id) if BtnIcon then BtnIcon.Image = id end end
 
@@ -5562,7 +5562,7 @@ pcall(function()
     end
 end)
 -- فتح كل الصلاحيات تلقائياً لصاحب السكربت
-if LP.Name == "beka" then
+if LP.Name == "yousif1479" then
     HubData.OwnsVIP = true
     HubData.OwnsGamesTab = true
     HubData.OwnsSamilllRank = true
@@ -5600,7 +5600,7 @@ local function SaveHubData()
 end
 
 -- 👑 هدية خاصة للمطور: نقاط لا نهائية لحسابك فقط
-if LP.Name == "beka" then
+if LP.Name == "yousif1479" then
     if HubData.MyPoints < 9999999 then
         HubData.MyPoints = 9999999
         SaveHubData()
